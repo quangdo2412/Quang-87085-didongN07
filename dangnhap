@@ -1,0 +1,124 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  print("Hello World");
+  runApp(MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      themeMode: ThemeMode.dark,
+      title: "Thuy",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Sign in"),
+          centerTitle: true,
+          backgroundColor: Colors.green,
+        ),
+        backgroundColor: Colors.white,
+        body: Padding(
+            padding: EdgeInsets.all(15),
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.all(15),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'User Name',
+                        hintText: 'User Name',
+                        hintStyle: TextStyle(color: Colors.black),
+                        labelStyle: TextStyle(color: Colors.black)),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(15),
+                  child: TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Password',
+                      hintText: 'Enter Password',
+                      hintStyle: TextStyle(color: Colors.black),
+                      labelStyle: TextStyle(color: Colors.black),
+                    ),
+                  ),
+                ),
+                ElevatedButton(
+                  child: Text('Sign In'),
+                  
+                  onPressed: () {},
+                )
+              ],
+            )
+            ),
+      )
+      debugShowCheckedModeBanner: false,
+      )
+      );
+      
+}
+import 'package:flutter/material.dart';
+
+void main() {
+  print("Hello World");
+  runApp(MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      themeMode: ThemeMode.dark,
+      title: "Thuy",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Sign in"),
+          centerTitle: true,
+          backgroundColor: Colors.green,
+        ),
+        backgroundColor: Colors.white,
+        body: Padding(
+            padding: EdgeInsets.all(15),
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.all(15),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'User Name',
+                        hintText: 'User Name',
+                        hintStyle: TextStyle(color: Colors.black),
+                        labelStyle: TextStyle(color: Colors.black)),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(15),
+                  child: TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Password',
+                      hintText: 'Enter Password',
+                      hintStyle: TextStyle(color: Colors.black),
+                      labelStyle: TextStyle(color: Colors.black),
+                    ),
+                  ),
+                ),
+                ElevatedButton(
+                  child: Text('Sign In'),
+                  
+                  onPressed: () {},
+                )
+              ],
+            )
+            ),
+      )
+      debugShowCheckedModeBanner: false,
+      )
+      );
+      
+}
